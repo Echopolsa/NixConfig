@@ -135,7 +135,7 @@
 programs.openvpn3.enable = true;
 
 # Enable VMWare
-  # virtualisation.vmware.host.enable = true;
+   virtualisation.vmware.host.enable = true;
   # virtualisation.vmware.host.enable = true;
   #	virtualisation.vmware.host.package = (pkgs.vmware-workstation.overrideAttrs rec {
 #		src = ./vmware.bundle;
