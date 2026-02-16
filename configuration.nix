@@ -128,6 +128,7 @@
      networkmanager-openvpn
      openvpn3
      beammp-launcher      
+     asusctl
   ];
 
 #test
