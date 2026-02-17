@@ -119,16 +119,16 @@
      gromit-mpx
      remmina
      git
-     gnomeExtensions.paperwm
+     # gnomeExtensions.paperwm
     # firefox
      #chromium
      #nvidia-x11
      #nvidia-settings
      #nvidia-persistenced
-     networkmanager-openvpn
-     openvpn3
+     # networkmanager-openvpn
+     # openvpn3
      beammp-launcher      
-     asusctl
+     # asusctl
      discord
   ];
 
