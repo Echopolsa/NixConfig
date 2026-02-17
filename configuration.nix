@@ -112,7 +112,7 @@
   environment.systemPackages = with pkgs; [
     # steam
      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    # wget
+     # wget
      vivaldi
      bitwarden-desktop
      obsidian
@@ -120,15 +120,15 @@
      remmina
      git
      # gnomeExtensions.paperwm
-    # firefox
-     #chromium
-     #nvidia-x11
-     #nvidia-settings
-     #nvidia-persistenced
+     # firefox
+     # chromium
+     # nvidia-x11
+     # nvidia-settings
+     # nvidia-persistenced
      # networkmanager-openvpn
      # openvpn3
      beammp-launcher      
-     # asusctl
+     asusctl
      discord
   ];
 
