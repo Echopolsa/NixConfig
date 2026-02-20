@@ -21,7 +21,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
-  # boot.kernelPackages = pkgs.linuxPackages_latest;
+   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -157,7 +157,7 @@ programs.openvpn3.enable = true;
 # Virtualbox for when an open source hypervisor is preferred. 
   # virtualisation.virtualbox.host.enable = true;
 
-
+/*
 # Enable Steam
    programs.steam.enable = true;
   # Some programs need SUID wrappers, can be configured further or are
@@ -167,6 +167,7 @@ programs.openvpn3.enable = true;
      enable = true;
      enableSSHSupport = true;
    };
+*/
 
   # List services that you want to enable:
 
@@ -185,7 +186,7 @@ networking.firewall.allowedTCPPorts = [ 3389 ];
 #services.getty.autologinUser = null;
 
 
-
+/*
 # Enable Nvidia
 
  # Enable OpenGL
@@ -226,7 +227,7 @@ networking.firewall.allowedTCPPorts = [ 3389 ];
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
- 
+*/ 
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
