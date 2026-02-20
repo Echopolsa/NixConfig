@@ -117,7 +117,7 @@
      vivaldi
      bitwarden-desktop
      obsidian
-     gromit-mpx
+     # gromit-mpx # Screen drawing tool
      remmina
      git
      # gnomeExtensions.paperwm
@@ -128,7 +128,7 @@
      # nvidia-persistenced
      # networkmanager-openvpn
      # openvpn3
-     beammp-launcher      
+     # beammp-launcher      
      # asusctl
      discord
   ];
