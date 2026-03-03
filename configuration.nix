@@ -131,6 +131,7 @@
      # beammp-launcher      
      # asusctl
      # discord
+     libreoffice
   ];
 
 #test
