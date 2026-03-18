@@ -56,7 +56,16 @@
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  # services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.desktopManager.gnome = {
+    enable = true;
+    extraGSettingsOverridePackages = [ pkgs.mutter ];
+    extraGSettingsOverrides = ''
+      [org.gnome.mutter.wayland]
+      xwayland-allow-grabs=true
+      xwayland-grab-access-rules=['parsecd']
+    '';
+  };
 
   # Configure keymap in X11
   services.xserver.xkb = {
