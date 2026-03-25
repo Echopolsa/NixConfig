@@ -142,6 +142,7 @@
      # discord
      libreoffice
 	freecad
+	nmap
   ];
 
 #test
