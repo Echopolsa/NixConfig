@@ -143,7 +143,8 @@
      libreoffice
 	freecad
 	nmap
-  ];
+	cifs-utils # installed for testing network drive  
+];
 
 #test
 programs.openvpn3.enable = true;
