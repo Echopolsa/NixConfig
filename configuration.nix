@@ -122,25 +122,25 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-     vivaldi
-     bitwarden-desktop
-     obsidian
-     # gromit-mpx # Screen drawing tool
-     remmina
-     git
-     # gnomeExtensions.paperwm
-     # firefox
-     # chromium
-     # nvidia-x11
-     # nvidia-settings
-     # nvidia-persistenced
-     # networkmanager-openvpn
-     # openvpn3
-     # beammp-launcher      
-     # asusctl
-     # discord
-     libreoffice
+     	vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+     	vivaldi
+     	bitwarden-desktop
+     	obsidian
+     	gromit-mpx # Screen drawing tool
+     	remmina
+	git
+     	# gnomeExtensions.paperwm
+     	# firefox
+     	# chromium
+     	# nvidia-x11
+     	# nvidia-settings
+     	# nvidia-persistenced
+     	# networkmanager-openvpn
+     	# openvpn3
+     	# beammp-launcher      
+     	# asusctl
+     	# discord
+     	libreoffice
 	freecad
 	nmap
 	cifs-utils # installed for testing network drive  
