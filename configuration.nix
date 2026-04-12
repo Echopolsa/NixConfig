@@ -129,7 +129,8 @@
      	gromit-mpx # Screen drawing tool
      	remmina
 	git
-     	# gnomeExtensions.paperwm
+     	discord
+	# gnomeExtensions.paperwm
      	# firefox
      	# chromium
      	# nvidia-x11
