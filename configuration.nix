@@ -199,7 +199,7 @@ networking.firewall.allowedTCPPorts = [ 3389 ];
 #services.getty.autologinUser = null;
 
 
-/*
+#/*
 # Enable Nvidia
 
  # Enable OpenGL
@@ -240,7 +240,7 @@ networking.firewall.allowedTCPPorts = [ 3389 ];
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
     package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
- */
+# */
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
