@@ -8,6 +8,12 @@
 { config, pkgs, ... }:
 
 {
+
+nixpkgs.config.permittedInsecurePackages = [
+                "electron-39.8.10"
+              ];
+
+
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
@@ -21,8 +27,8 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
-   #boot.kernelPackages = pkgs.linuxPackages_latest;
-	boot.kernelPackages = pkgs.linuxPackages_6_12;
+   boot.kernelPackages = pkgs.linuxPackages_latest;
+   #boot.kernelPackages = pkgs.linuxPackages_6_12;
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
  
@@ -123,11 +129,11 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
      	vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-     	vivaldi
-     	bitwarden-desktop
-     	obsidian
-     	gromit-mpx # Screen drawing tool
-     	remmina
+     	# vivaldi #browser
+     	# bitwarden-desktop #Password Storage
+     	# obsidian # Open source not taking network app
+     	# gromit-mpx # Screen drawing tool
+     	# remmina
 	git
 	# gnomeExtensions.paperwm
      	# firefox
@@ -140,15 +146,16 @@
      	# beammp-launcher      
      	# asusctl
      	# discord
-     	libreoffice
-	freecad
-	nmap
-	cifs-utils # installed for testing network drive  
+     	# libreoffice
+	# freecad
+	# nmap
+	# cifs-utils # installed for testing network drive  
 ];
 
 #test
-programs.openvpn3.enable = true;
+# programs.openvpn3.enable = true;
 
+#/*
 # Enable VMWare
    virtualisation.vmware.host.enable = true;
   # virtualisation.vmware.host.enable = true;
@@ -164,13 +171,13 @@ programs.openvpn3.enable = true;
 #	    # If you need it, copy the enableMacOSGuests stuff here as well.
 #	  '';
 #	});  
-
+#*/
 
 
 # Virtualbox for when an open source hypervisor is preferred. 
   # virtualisation.virtualbox.host.enable = true;
 
-
+/*
 # Enable Steam
    programs.steam.enable = true;
   # Some programs need SUID wrappers, can be configured further or are
@@ -180,7 +187,7 @@ programs.openvpn3.enable = true;
      enable = true;
      enableSSHSupport = true;
    };
-
+*/
 
   # List services that you want to enable:
 
@@ -199,7 +206,7 @@ networking.firewall.allowedTCPPorts = [ 3389 ];
 #services.getty.autologinUser = null;
 
 
-#/*
+/*
 # Enable Nvidia
 
  # Enable OpenGL
@@ -240,7 +247,7 @@ networking.firewall.allowedTCPPorts = [ 3389 ];
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
     package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
-# */
+ */
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
