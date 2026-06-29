@@ -129,7 +129,7 @@ nixpkgs.config.permittedInsecurePackages = [
   # $ nix search wget
   environment.systemPackages = with pkgs; [
      	vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-     	# vivaldi #browser
+     	 vivaldi #browser
      	# bitwarden-desktop #Password Storage
      	# obsidian # Open source not taking network app
      	# gromit-mpx # Screen drawing tool
@@ -145,7 +145,7 @@ nixpkgs.config.permittedInsecurePackages = [
      	# openvpn3
      	# beammp-launcher      
      	# asusctl
-     	# discord
+     	 discord
      	# libreoffice
 	# freecad
 	# nmap
