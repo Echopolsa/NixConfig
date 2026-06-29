@@ -146,10 +146,10 @@ nixpkgs.config.permittedInsecurePackages = [
      	# beammp-launcher      
      	# asusctl
      	 discord
-     	# libreoffice
-	# freecad
-	# nmap
-	# cifs-utils # installed for testing network drive  
+     	 libreoffice
+	 freecad
+	 nmap
+	 cifs-utils # installed for testing network drive  
 ];
 
 #test
