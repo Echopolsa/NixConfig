@@ -136,7 +136,7 @@ nixpkgs.config.permittedInsecurePackages = [
      	# remmina
 	git
 	# gnomeExtensions.paperwm
-     	# firefox
+     	 firefox
      	# chromium
      	# nvidia-x11
      	# nvidia-settings
