@@ -133,7 +133,7 @@ nixpkgs.config.permittedInsecurePackages = [
      	# bitwarden-desktop #Password Storage
      	# obsidian # Open source not taking network app
      	# gromit-mpx # Screen drawing tool
-     	# remmina
+     	 remmina # Remote Desktop Client
 	git
 	# gnomeExtensions.paperwm
      	 firefox
