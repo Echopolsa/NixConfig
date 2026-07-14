@@ -27,8 +27,8 @@ nixpkgs.config.permittedInsecurePackages = [
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
-   boot.kernelPackages = pkgs.linuxPackages_latest;
-   #boot.kernelPackages = pkgs.linuxPackages_6_12;
+   #boot.kernelPackages = pkgs.linuxPackages_latest;
+   boot.kernelPackages = pkgs.linuxPackages_6_12;
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
  
@@ -206,7 +206,7 @@ networking.firewall.allowedTCPPorts = [ 3389 ];
 #services.getty.autologinUser = null;
 
 
-/*
+#/*
 # Enable Nvidia
 
  # Enable OpenGL
@@ -245,10 +245,11 @@ networking.firewall.allowedTCPPorts = [ 3389 ];
     nvidiaSettings = true;
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
-    #package = config.boot.kernelPackages.nvidiaPackages.beta;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    #package = config.boot.kernelPackages.nvidiaPackages.stable;
+    #package = config.boot.kernelPackages.nvidiaPackages.production;
   };
-*/
+#*/
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
