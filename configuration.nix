@@ -177,7 +177,7 @@ nixpkgs.config.permittedInsecurePackages = [
 # Virtualbox for when an open source hypervisor is preferred. 
   # virtualisation.virtualbox.host.enable = true;
 
-/*
+#/*
 # Enable Steam
    programs.steam.enable = true;
   # Some programs need SUID wrappers, can be configured further or are
@@ -187,7 +187,7 @@ nixpkgs.config.permittedInsecurePackages = [
      enable = true;
      enableSSHSupport = true;
    };
-*/
+#*/
 
   # List services that you want to enable:
 
