@@ -129,14 +129,15 @@ nixpkgs.config.permittedInsecurePackages = [
   # $ nix search wget
   environment.systemPackages = with pkgs; [
      	vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-     	 vivaldi #browser
-     	# bitwarden-desktop #Password Storage
+     	# vivaldi #browser
+     	# zen-browser
+	# bitwarden-desktop #Password Storage
      	# obsidian # Open source not taking network app
      	# gromit-mpx # Screen drawing tool
-     	 remmina # Remote Desktop Client
+     	remmina # Remote Desktop Client
 	git
 	# gnomeExtensions.paperwm
-     	 firefox
+     	firefox
      	# chromium
      	# nvidia-x11
      	# nvidia-settings
@@ -145,11 +146,11 @@ nixpkgs.config.permittedInsecurePackages = [
      	# openvpn3
      	# beammp-launcher      
      	# asusctl
-     	 discord
-     	 libreoffice
-	 freecad
-	 nmap
-	 cifs-utils # installed for testing network drive  
+     	discord
+     	libreoffice
+	freecad
+	nmap
+	cifs-utils # installed for testing network drive  
 ];
 
 #test
