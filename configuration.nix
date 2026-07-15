@@ -155,6 +155,7 @@ nixpkgs.config.permittedInsecurePackages = [
 	freecad
 	nmap
 	cifs-utils # installed for testing network drive  
+	inkscape #SVG Editor
 ];
 
 #test
