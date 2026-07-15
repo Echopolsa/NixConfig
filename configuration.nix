@@ -57,13 +57,35 @@ nixpkgs.config.permittedInsecurePackages = [
     LC_TIME = "en_US.UTF-8";
   };
 
+
+
+/*
   # Enable the X11 windowing system.
    services.xserver.enable = true;
 
-  # Enable the GNOME Desktop Environment.
-   services.xserver.displayManager.gdm.enable = true; # Modular Desktop Window Manager
-  # services.xserver.desktopManager.gnome.enable = true; # Standard Desktop Window Manager
-  #/*
+  # Enable the Gnome Desktop Environment.
+   services.xserver.displayManager.gdm.enable = true; # Display  Manager
+   services.xserver.desktopManager.gnome.enable = true; # Standard Desktop Window Manager (Gnome)
+*/
+
+
+
+#/*
+
+  # Enable Plasma 
+    services.desktopManager.plasma6.enable = true;
+
+    # Default display manager for Plasma
+    services.displayManager.sddm.enable = true;
+
+    # Optionally enable xserver
+    services.xserver.enable = true;
+
+#*/
+
+
+
+  /*
     services.xserver.desktopManager.gnome = {
     enable = true;
     extraGSettingsOverridePackages = [ pkgs.mutter ];
@@ -73,7 +95,7 @@ nixpkgs.config.permittedInsecurePackages = [
       xwayland-grab-access-rules=['parsecd']
     '';
   };
-  #*/
+  */
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -198,6 +220,9 @@ nixpkgs.config.permittedInsecurePackages = [
 
   # List services that you want to enable:
 
+
+
+/* #Gnome Rdp
 # Enable the GNOME RDP components
 services.gnome.gnome-remote-desktop.enable = true;
 
@@ -206,8 +231,11 @@ systemd.services.gnome-remote-desktop = {
   wantedBy = [ "graphical.target" ];
 };
 
+
 # Open the default RDP port (3389)
 networking.firewall.allowedTCPPorts = [ 3389 ];
+*/
+
 
 #services.displayManager.autologin.enable = false;
 #services.getty.autologinUser = null;
@@ -275,4 +303,4 @@ networking.firewall.allowedTCPPorts = [ 3389 ];
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "25.11"; # Did you read the comment?
 
-}
+} # Test to see if the thing works now
