@@ -81,6 +81,7 @@ nixpkgs.config.permittedInsecurePackages = [
     # Optionally enable xserver
     services.xserver.enable = true;
 
+
 #*/
 
 
@@ -283,6 +284,19 @@ networking.firewall.allowedTCPPorts = [ 3389 ];
     package = config.boot.kernelPackages.nvidiaPackages.beta;
     #package = config.boot.kernelPackages.nvidiaPackages.stable;
     #package = config.boot.kernelPackages.nvidiaPackages.production;
+
+#/* #Test for X11 on Omen Laptop
+	prime = {
+      # This forces the NVIDIA GPU to do all the rendering. 
+      # (Great for performance and fixing black screens, but drains battery faster).
+      sync.enable = true; 
+
+      # Replace these with your translated Bus IDs from Step 1!
+      amdgpuBusId = "PCI:6:0:0"; 
+      nvidiaBusId = "PCI:1:0:0";
+    };
+#*/
+
   };
 #*/
 
