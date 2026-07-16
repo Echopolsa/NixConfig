@@ -65,7 +65,7 @@ nixpkgs.config.permittedInsecurePackages = [
 
   # Enable the Gnome Desktop Environment.
    services.xserver.displayManager.gdm.enable = true; # Display  Manager
-   # services.xserver.desktopManager.gnome.enable = true; # Standard Desktop Window Manager (Gnome)
+   services.xserver.desktopManager.gnome.enable = true; # Standard Desktop Window Manager (Gnome)
 
 #*/
 
