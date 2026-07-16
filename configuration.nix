@@ -59,18 +59,19 @@ nixpkgs.config.permittedInsecurePackages = [
 
 
 
-/*
+#/*
   # Enable the X11 windowing system.
    services.xserver.enable = true;
 
   # Enable the Gnome Desktop Environment.
    services.xserver.displayManager.gdm.enable = true; # Display  Manager
-   services.xserver.desktopManager.gnome.enable = true; # Standard Desktop Window Manager (Gnome)
-*/
+   # services.xserver.desktopManager.gnome.enable = true; # Standard Desktop Window Manager (Gnome)
+
+#*/
 
 
 
-#/*
+/*
 
   # Enable Plasma 
     services.desktopManager.plasma6.enable = true;
@@ -82,11 +83,11 @@ nixpkgs.config.permittedInsecurePackages = [
     services.xserver.enable = true;
 
 
-#*/
+*/
 
 
 
-  /*
+  #/*
     services.xserver.desktopManager.gnome = {
     enable = true;
     extraGSettingsOverridePackages = [ pkgs.mutter ];
@@ -96,7 +97,7 @@ nixpkgs.config.permittedInsecurePackages = [
       xwayland-grab-access-rules=['parsecd']
     '';
   };
-  */
+  #*/
 
   # Configure keymap in X11
   services.xserver.xkb = {
