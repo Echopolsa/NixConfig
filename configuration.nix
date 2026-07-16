@@ -28,7 +28,7 @@ nixpkgs.config.permittedInsecurePackages = [
 
   # Use latest kernel.
    #boot.kernelPackages = pkgs.linuxPackages_latest;
-   boot.kernelPackages = pkgs.linuxPackages_6_18;
+   boot.kernelPackages = pkgs.linuxPackages_6_12;
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
  
@@ -87,7 +87,7 @@ nixpkgs.config.permittedInsecurePackages = [
 
 
 
-  #/*
+  /*
     services.xserver.desktopManager.gnome = {
     enable = true;
     extraGSettingsOverridePackages = [ pkgs.mutter ];
@@ -97,7 +97,7 @@ nixpkgs.config.permittedInsecurePackages = [
       xwayland-grab-access-rules=['parsecd']
     '';
   };
-  #*/
+  */
 
   # Configure keymap in X11
   services.xserver.xkb = {
