@@ -181,6 +181,7 @@ nixpkgs.config.permittedInsecurePackages = [
 	nmap
 	cifs-utils # installed for testing network drive  
 	inkscape #SVG Editor
+	vscode # Visual Studio Code IDE
 ];
 
 #test
