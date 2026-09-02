@@ -181,11 +181,12 @@ nixpkgs.config.permittedInsecurePackages = [
 	nmap
 	cifs-utils # installed for testing network drive  
 	inkscape #SVG Editor
+	wireshark
 	vscode # Visual Studio Code IDE
-	chatgpt # Chat GPT desktop app
+	# chatgpt # Chat GPT desktop app
 ];
 
-nixpkgs.config.allowUnsupportedSystem = true;
+# nixpkgs.config.allowUnsupportedSystem = true;
 
 #test
 # programs.openvpn3.enable = true;
