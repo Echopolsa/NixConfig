@@ -160,7 +160,9 @@ nixpkgs.config.permittedInsecurePackages = [
      	# vivaldi #browser
      	# zen-browser
 	# bitwarden-desktop #Password Storage
-     	# obsidian # Open source not taking network app
+     	# codex
+	claude-code
+	# obsidian # Open source not taking network app
      	# gromit-mpx # Screen drawing tool
      	remmina # Remote Desktop Client
 	git
@@ -181,7 +183,7 @@ nixpkgs.config.permittedInsecurePackages = [
 	nmap
 	cifs-utils # installed for testing network drive  
 	inkscape #SVG Editor
-	wireshark
+	wireshark #Network Browser
 	vscode # Visual Studio Code IDE
 	# chatgpt # Chat GPT desktop app
 ];
