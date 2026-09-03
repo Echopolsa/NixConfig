@@ -162,7 +162,7 @@ nixpkgs.config.permittedInsecurePackages = [
 	# bitwarden-desktop #Password Storage
      	# codex
 	claude-code
-	# obsidian # Open source not taking network app
+	obsidian # Open source not taking network app
      	# gromit-mpx # Screen drawing tool
      	remmina # Remote Desktop Client
 	git
