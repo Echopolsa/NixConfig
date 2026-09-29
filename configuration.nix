@@ -176,7 +176,8 @@ nixpkgs.config.permittedInsecurePackages = [
      	# openvpn3
      	# beammp-launcher      
      	# asusctl
-     	discord
+     	qelectrotech # FOSS 2D Electrical Cad Alternative
+	discord
      	libreoffice # FOSS Microsoft Office Alternative
 	librecad # FOSS 2D Cad Alternative
 	freecad
