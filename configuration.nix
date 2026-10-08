@@ -11,6 +11,7 @@
 
 nixpkgs.config.permittedInsecurePackages = [
                 "electron-39.8.10"
+		"docker-28.5.2"
               ];
 
 
@@ -176,6 +177,7 @@ nixpkgs.config.permittedInsecurePackages = [
      	# openvpn3
      	# beammp-launcher      
      	# asusctl
+	docker # Virtualization and container software
      	qelectrotech # FOSS 2D Electrical Cad Alternative
 	discord
      	libreoffice # FOSS Microsoft Office Alternative
