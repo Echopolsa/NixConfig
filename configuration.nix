@@ -173,8 +173,8 @@ environment.sessionVariables = {
      	remmina # Remote Desktop Client
 	git
 	# gnomeExtensions.paperwm
-     	# firefox
-     	chromium
+     	firefox
+     	# chromium
      	# nvidia-x11
      	# nvidia-settings
      	# nvidia-persistenced
