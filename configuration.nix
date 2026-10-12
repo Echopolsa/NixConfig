@@ -177,7 +177,7 @@ nixpkgs.config.permittedInsecurePackages = [
      	# openvpn3
      	# beammp-launcher      
      	# asusctl
-	docker # Virtualization and container software
+	# docker # Virtualization and container software - Now declared below
      	qelectrotech # FOSS 2D Electrical Cad Alternative
 	discord
      	libreoffice # FOSS Microsoft Office Alternative
@@ -195,6 +195,10 @@ nixpkgs.config.permittedInsecurePackages = [
 
 #test
 # programs.openvpn3.enable = true;
+
+
+
+
 
 #/*
 # Enable VMWare
@@ -217,6 +221,14 @@ nixpkgs.config.permittedInsecurePackages = [
 
 # Virtualbox for when an open source hypervisor is preferred. 
   # virtualisation.virtualbox.host.enable = true;
+
+
+# Enable Docker daemon
+virtualisation.docker.enable = true;
+
+
+
+
 
 #/*
 # Enable Steam
