@@ -71,6 +71,11 @@ nixpkgs.config.permittedInsecurePackages = [
 #*/
 
 
+# Mouse Fix
+environment.sessionVariables = {
+  MUTTER_DEBUG_DISABLE_HW_CURSORS = "1";
+};
+
 
 /*
 
