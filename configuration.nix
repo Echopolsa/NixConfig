@@ -226,7 +226,7 @@ nixpkgs.config.permittedInsecurePackages = [
 # Enable Docker daemon
 virtualisation.docker.enable = true;
 
-
+hardware.nvidia-container-toolkit.enable = true;
 
 
 
