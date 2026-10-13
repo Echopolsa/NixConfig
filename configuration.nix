@@ -193,6 +193,7 @@ environment.sessionVariables = {
 	inkscape #SVG Editor
 	wireshark #Network Browser
 	vscode # Visual Studio Code IDE
+	streamdeck-ui # Streamdeck Linux UI (And app?) 
 	# chatgpt # Chat GPT desktop app
 ];
 
