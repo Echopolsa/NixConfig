@@ -189,6 +189,8 @@ environment.sessionVariables = {
 	librecad # FOSS 2D Cad Alternative
 	freecad
 	nmap
+	antigravity # Google ai client
+
 	cifs-utils # installed for testing network drive  
 	inkscape #SVG Editor
 	wireshark #Network Browser
