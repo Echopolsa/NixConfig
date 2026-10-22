@@ -205,7 +205,15 @@ environment.sessionVariables = {
 # programs.openvpn3.enable = true;
 
 
-
+programs.nix-ld.enable = true;
+programs.nix-ld.libraries = with pkgs; [
+  stdenv.cc.cc.lib
+  zlib
+  openssl
+  curl
+  glib
+  # Add other missing libraries here if the agent still fails to load
+];
 
 
 #/*
