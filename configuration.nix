@@ -174,7 +174,7 @@ environment.sessionVariables = {
 	git
 	# gnomeExtensions.paperwm
      	firefox
-     	# chromium
+     	chromium
      	# nvidia-x11
      	# nvidia-settings
      	# nvidia-persistenced
@@ -236,16 +236,6 @@ programs.nix-ld.libraries = with pkgs; [
 #	    # If you need it, copy the enableMacOSGuests stuff here as well.
 #	  '';
 #	});  
-
-
-
-
-
-
-
-
-
-
 #*/
 
 
