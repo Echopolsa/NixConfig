@@ -219,6 +219,10 @@ programs.nix-ld.libraries = with pkgs; [
 #/*
 # Enable VMWare
    virtualisation.vmware.host.enable = true;
+   virtualisation.vmware.host.extraConfig = ''
+    prefvmx.minVmMemPct = "100"
+    prefvmx.useRecommendedLockedPageSize = "TRUE"
+  '';
   # virtualisation.vmware.host.enable = true;
   #	virtualisation.vmware.host.package = (pkgs.vmware-workstation.overrideAttrs rec {
 #		src = ./vmware.bundle;
@@ -232,6 +236,16 @@ programs.nix-ld.libraries = with pkgs; [
 #	    # If you need it, copy the enableMacOSGuests stuff here as well.
 #	  '';
 #	});  
+
+
+
+
+
+
+
+
+
+
 #*/
 
 
