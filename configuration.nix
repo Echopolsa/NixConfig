@@ -169,7 +169,7 @@ environment.sessionVariables = {
      	# codex
 	claude-code
 	obsidian # Open source not taking network app
-     	# gromit-mpx # Screen drawing tool
+     	gromit-mpx # Screen drawing tool
      	remmina # Remote Desktop Client
 	git
 	# gnomeExtensions.paperwm
