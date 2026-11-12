@@ -20,6 +20,7 @@ nixpkgs.config.permittedInsecurePackages = [
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./owon-vds1022.nix
     ];
 
   # Enable All Hardware
