@@ -43,6 +43,7 @@ let
       cp lib/linux/amd64/* $app/lib/
 
       makeWrapper ${pkgs.jdk}/bin/java $out/bin/${pname} \
+        --add-flags "-Dawt.robot.screenshotMethod=x11" \
         --add-flags "-cp '$app/lib/*' com.owon.vds.tiny.Main" \
         --prefix LD_LIBRARY_PATH : "$app/lib:${pkgs.libusb1}/lib"
 
