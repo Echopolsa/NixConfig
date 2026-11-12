@@ -6,7 +6,9 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, ... }:
-
+let
+	unstable = import <nixos-unstable> { config.allowUnfree = true; };
+in
 {
 
 nixpkgs.config.permittedInsecurePackages = [
@@ -168,7 +170,7 @@ environment.sessionVariables = {
      	# zen-browser
 	# bitwarden-desktop #Password Storage
      	# codex
-	claude-code
+	unstable.claude-code
 	obsidian # Open source not taking network app
      	gromit-mpx # Screen drawing tool
      	remmina # Remote Desktop Client
