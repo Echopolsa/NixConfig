@@ -28,8 +28,9 @@ nixpkgs.config.permittedInsecurePackages = [
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
-   #boot.kernelPackages = pkgs.linuxPackages_latest;
-   boot.kernelPackages = pkgs.linuxPackages_6_12;
+	boot.kernelPackages = pkgs.linuxPackages_latest;
+   	#boot.kernelPackages = pkgs.linuxPackages_6_14;
+	#boot.kernelPackages = pkgs.linuxPackages_6_12;
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
  
@@ -324,8 +325,8 @@ networking.firewall.allowedTCPPorts = [ 3389 ];
     nvidiaSettings = true;
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
-    #package = config.boot.kernelPackages.nvidiaPackages.beta;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    #package = config.boot.kernelPackages.nvidiaPackages.stable;
     #package = config.boot.kernelPackages.nvidiaPackages.production;
 
 /* #Test for X11 on Omen Laptop
