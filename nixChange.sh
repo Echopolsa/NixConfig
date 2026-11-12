@@ -2,8 +2,8 @@
 sudo bash /etc/nixos/configEdit.sh
 echo "Successful build? (y)"
 read response
-if [ $response != "y" ]; then
-exit beforeGit
-else
-sudo bash /etc/nixos/updateGit.sh
+if [ "$response" != "y" ]; then
+  echo "Skipping git commit."
+  exit 1
 fi
+sudo bash /etc/nixos/updateGit.sh
