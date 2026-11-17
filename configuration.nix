@@ -201,6 +201,7 @@ environment.sessionVariables = {
 	vscode # Visual Studio Code IDE
 	streamdeck-ui # Streamdeck Linux UI (And app?) 
 	# chatgpt # Chat GPT desktop app
+	hardinfo2 # System information and benchmark tool
 ];
 
 # nixpkgs.config.allowUnsupportedSystem = true;
