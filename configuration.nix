@@ -192,6 +192,7 @@ environment.sessionVariables = {
      	libreoffice # FOSS Microsoft Office Alternative
 	librecad # FOSS 2D Cad Alternative
 	freecad
+	bambu-studio # Bambu Lab 3D printer slicer
 	nmap
 	antigravity # Google ai client
 
